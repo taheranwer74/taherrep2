@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font-main: 800;
+    --size-main: 40px;
+    --main-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    margin-left: 10%;
+    width: 80%;
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header .nav ul li {
+    list-style: none;
+    padding-left: 5em;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header .nav ul li a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 2em;
+    padding-right: 0.5em;
+}
+
+@media (max-width: 1130px) {
+    .header .nav ul li a {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 1130px) {
+    .header .nav ul li a {
+        font-size: 1em;
+    }
+}
+
+.header .nav ul li a:hover {
+    color: white;
+}
+
+.header .logo {
+    color: wheat;
+    font-size: 2em;
+}
+
+@media (max-width: 1130px) {
+    .header .logo {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 1130px) {
+    .header .logo {
+        font-size: 1em;
+    }
+}
+
+.header .logo .main span {
+    color: gainsboro;
+    letter-spacing: 0.2em;
+    border: 0.1em solid wheat;
+}
+
+.home {
+    height: 100vh;
+    width: 100vw;
+}
+
+.home .container {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.home .container .img-box {
+    height: 100vh;
+    width: 100vw;
+    max-height: 100%;
+    max-width: 100%;
+    background: url(../imgs/body4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .container .img-box h2 {
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+.home .container .img-box p {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.home .container .img-box a {
+    background-color: #b6925e;
+    font-size: 2em;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.home .container .img-box a:hover {
+    letter-spacing: 0.1em;
+}
+
+.home .container .img-box a span {
+    color: black;
+}
